@@ -1,4 +1,4 @@
-## Unit 7 — Issue selection
+## Unit 7 — Issue Selection
 
 **Issue link:** (https://github.com/codepath/pathreview-ai201-fa26-howard/issues/75)
 
@@ -9,8 +9,13 @@
 **Problem summary:**
 This is an issue occurring in the docs specifically. README.md and .env.example have conflicting information about the LLM API to be used. This is an issue because the specific API is important to how to entire codebase is set up and how the code is written. Conflicting information will confuse developers involved. A successful fix will be to have the correct API listed in both documents.
 
-**Branch name:** fix/75-api-disagreement-in-docs
+**Branch name:** fix-75-api-disagreement-in-docs
 
 **Setup confirmation:** [X] App runs locally at localhost:5173
 
 **Cohort ledger:** [X] Issue added to cohort ledger
+
+## Unit 8 - Issue Reproduction and Fix Planning
+
+**Issue Reproduction:** 
+In Line 27 of README.md there is a comment that says to add OPENROUTER_API_KEY to the .env file. This contrasts from line 17 of .env.example which lists the options as "mock" (default, no API key needed) and "openai". These are differing instructions.
